@@ -37,11 +37,12 @@ $red: #ff0000;
 
 // Блоки стилей
 @import 'settings';
-@import 'blocks/menu';
 @import 'blocks/header';
+@import 'blocks/menu';
 @import 'blocks/welcome';
 @import 'blocks/history';
 @import 'blocks/video';
 @import 'blocks/footer';
+@import 'blocks/owrHistory';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';

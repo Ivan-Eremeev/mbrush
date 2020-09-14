@@ -1,8 +1,11 @@
 .header {
-	position: absolute;
 	width: 100%;
 	padding: 45px 0 20px;
 	z-index: 10;
+	background: transparent;
+	&--position {
+		position: absolute;
+	}
 	@media (max-width: $break_sm) {
 		padding: 20px 0;
 	}
@@ -11,7 +14,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #fff;
 	position: relative;
 	@media (max-width: $break_sm) {
 		justify-content: center;
@@ -24,6 +26,12 @@
 	transition: .2s;
 	&:hover {
 		color: rgba(255, 255, 255, 0.75);
+	}
+	&--black {
+		color: #000;
+		&:hover {
+			color: #000;
+		}
 	}
 	@media (max-width: $break_sm) {
 		font-size: 20px;
@@ -43,6 +51,14 @@
 		transition: .2s;
 		&:hover {
 			color: rgba(255, 255, 255, 0.75);
+		}
+	}
+	&--black {
+		a {
+			color: #000;
+			&:hover {
+				color: #000;
+			}
 		}
 	}
 	@media (max-width: $break_sm) {
@@ -80,6 +96,14 @@
 		}
 		&:before {
 			bottom: -7px;
+		}
+	}
+	&--black {
+		.menu-btn_inner {
+			background-color: #000;
+			&:after, &:before {
+				background-color: #000;
+			}
 		}
 	}
 	@media (min-width: $break_sm) {

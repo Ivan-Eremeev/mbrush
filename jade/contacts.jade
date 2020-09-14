@@ -1,22 +1,17 @@
 extends blocks/base.jade
 
 block title 
-	title Меню страниц
+	title Наша история
 
 block content
 
-	.page
+	include blocks/header_black.jade
+	
+	.wrapper
 
-		//- include blocks/header.jade
 		
-		.wrapper
-			ul.pageNav
-				li
-					a(href="home.html") Главная
-				li
-					a(href="owr_history.html") Наша история
-			
-		//- include blocks/footer.jade
+		
+	include blocks/footer.jade
 
 block js
 	script(src="js/jquery.min.js")
