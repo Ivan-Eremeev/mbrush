@@ -1,0 +1,241 @@
+.menu {
+	&_nav {
+		
+	}
+	&_list {
+		&--white {
+			a {
+				padding: 15px 0 !important;
+				color: #fff !important;
+				font-size: 22px !important;
+			}
+		}
+	}
+	& li {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	& a {
+		display: block;
+		padding: 10px 0;
+		margin: 0 10px;
+		font-family: Arapey, serif;
+		text-decoration: none;
+		color: #bfbfbf;
+	}
+	@media (max-width: $break_sm) {
+		position: relative;
+		z-index: 100;
+		&--left {
+			&.open {
+				.menu a {
+					// animation: menuLinkLeft .5s linear;
+				}
+				.menu_nav {
+					left: 0;
+				}
+				.menu_over {
+					display: block;
+				}
+			}
+			.menu_nav {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: -1000px;
+				transition: .5s;
+				overflow-y: auto;
+			}
+			.menu_over {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,.5);
+			}
+		}
+		&--right {
+			&.open {
+				.menu a {
+					animation: menuLinkRight .5s linear;
+				}
+				.menu_nav {
+					right: 0;
+				}
+				.menu_over {
+					display: block;
+				}
+			}
+			.menu_nav {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				right: -1000px;
+				transition: .5s;
+				overflow-y: auto;
+			}
+			.menu_over {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,.5);
+			}
+		}
+		&--top {
+			&.open {
+				.menu a {
+					animation: menuLinkTop .7s ease-out;
+				}
+				.menu_nav {
+					top: 0;
+				}
+				.menu_over {
+					display: block;
+				}
+			}
+			.menu_nav {
+				height: 100%;
+				position: fixed;
+				top: -1000px;
+				left: 0;
+				transition: .5s;
+				overflow-y: auto;
+			}
+			.menu li {
+				overflow: hidden;
+			}
+			.menu_over {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,.5);
+			}
+		}
+		&--bottom {
+			&.open {
+				.menu a {
+					animation: menuLinkBottom .7s ease-out;
+				}
+				.menu_nav {
+					bottom: 0;
+				}
+				.menu_over {
+					display: block;
+				}
+			}
+			.menu_nav {
+				position: fixed;
+				bottom: -1000px;
+				left: 0;
+				bottom: 0;
+				transition: .5s;
+				overflow-y: auto;
+			}
+			.menu li {
+				overflow: hidden;
+			}
+			.menu_over {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: rgba(0,0,0,.5);
+			}
+		}
+		&--drop {
+			&.open {
+				.menu_nav {
+					max-height: 2000px;
+					transition: 2s;
+				}
+			}
+			.menu_nav {
+				position: absolute;
+				top: 100%;
+				left: 0;
+				max-height: 0;
+				transition: .8s;
+			}
+		}
+		&_nav {
+			width: 95%;
+			padding: 26px 15px;
+			background-color: #1f2021;
+			z-index: 99;
+			overflow: hidden;
+		}
+		& li {
+			display: block;
+			// &:nth-child(1) {
+				
+			// }
+			&:nth-child(2) {
+				.menu a {
+					animation-delay: .02s;
+				}
+			}
+			&:nth-child(3) {
+				.menu a {
+					animation-delay: 0.04s;
+				}
+			}
+			&:nth-child(4) {
+				.menu a {
+					animation-delay: 0.06s;
+				}
+			}
+			&:nth-child(5) {
+				.menu a {
+					animation-delay: 0.08s;
+				}
+			}
+			&:nth-child(6) {
+				.menu a {
+					animation-delay: 0.1s;
+				}
+			}
+			&:nth-child(7) {
+				.menu a {
+					animation-delay: 0.12s;
+				}
+			}
+			&:nth-child(8) {
+				.menu a {
+					animation-delay: 0.14s;
+				}
+			}
+			&:nth-child(9) {
+				.menu a {
+					animation-delay: 0.16s;
+				}
+			}
+			&:nth-child(10) {
+				.menu a {
+					animation-delay: 0.18s;
+				}
+			}
+		}
+		& a {
+			border: none;
+			margin: 0;
+		}
+		&_over {
+			display: none;
+			z-index: 98;
+		}
+	}
+	@media (max-width: $break_xs) {
+		&_nav {
+			width: 95%;
+		}
+	}
+	@media (min-width: $break_sm) {
+		display: none;
+	}
+}

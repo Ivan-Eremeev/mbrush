@@ -1,0 +1,47 @@
+@import 'mixins';
+
+@include reset(); // Сброс стилей
+
+@import 'libs';
+@import 'mixingrid';
+
+// Переменные для кастомизации Mixingrid
+$columns: 12; // Колличество колонок
+$max-width: 1200px; // Максимальная ширина контейнера
+$gutter: 100px; // Расстояние между колонками
+$offset: 30px; // Поля контейнера
+$offset-sm: 15px; // Поля контейнера на мобилке
+// Брэйкпоинты
+$break_xl: 1400px;
+$break_lg: 1200px;
+$break_md: 1050px;
+$break_sm: 769px;
+$break_xs: 500px;
+
+// Шрифты
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-Regular", normal, normal);
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-Medium", 500, normal);
+@include font-face("Montserrat", "../fonts/montserrat/Montserrat-SemiBold", 600, normal);
+
+@include font-face("MyriadPro", "../fonts/myriad_pro/MyriadPro-Light", 300, normal);
+@include font-face("MyriadPro", "../fonts/myriad_pro/MyriadPro-Semibold", 600, normal);
+
+@include font-face("OldStandardTT", "../fonts/oldstandardtt/OldStandardTT-Regular", normal, normal);
+@include font-face("OldStandardTT", "../fonts/oldstandardtt/OldStandardTT-Bold.woff", 700, normal);
+
+@include font-face("Arapey", "../fonts/arapey/arapeyregular", normal, normal);
+
+// Цвета
+$orange: #d9a432;
+$red: #ff0000;
+
+// Блоки стилей
+@import 'settings';
+@import 'blocks/menu';
+@import 'blocks/header';
+@import 'blocks/welcome';
+@import 'blocks/history';
+@import 'blocks/video';
+@import 'blocks/footer';
+// @import 'blocks/modal';
+// @import 'blocks/tooltipster-noir';

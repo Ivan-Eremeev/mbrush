@@ -1,0 +1,105 @@
+html {
+	&.lock {
+		overflow: hidden;
+	}
+}
+a {
+	transition: .1s;
+	text-decoration: none;
+}
+button {
+	font-family: Montserrat, sans-serif;
+	outline: none;
+}
+input {
+	font-family: Montserrat, sans-serif;
+	outline: none;
+}
+.row {
+	@include row-flex();
+}
+.wrapper {
+	@include wrapper();
+}
+body {
+	background-color: #fff;
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	@media (max-width: $break_sm) {
+		font-size: 14px;
+	}
+}
+.mobile-hide {
+	@media (max-width: $break_sm) {
+		display: none !important;
+	}
+}
+.mobile-visible {
+	@media (min-width: $break_sm + 1) {
+		display: none !important;
+	}
+}
+.img-responsive {
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&:after {
+		content: '';
+		display: block;
+		padding-top: 56.25%;
+	}
+}
+
+.wrapper {
+	@include wrapper();
+}
+.row {
+	@include row-flex();
+}
+.btn-black {
+	padding: 10px 30px;
+	background-color: #1f2021;
+	font-family: MyriadPro, sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	@media (max-width: $break_sm) {
+		font-size: 16px;
+	}
+}
+.title {
+	font-family: OldStandardTT, serif;
+	font-size: 70px;
+	line-height: 80px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+.subtitle {
+	font-family: OldStandardTT, serif;
+	font-size: 36px;
+	line-height: 50px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+.subtitle-b {
+	font-family: OldStandardTT, serif;
+	font-size: 28px;
+	line-height: 41px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	@media (max-width: $break_sm) {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
