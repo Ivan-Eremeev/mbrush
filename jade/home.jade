@@ -61,7 +61,10 @@ block content
 
 		// video
 		.video
-			<iframe width="850" height="480" src="https://www.youtube.com/embed/ThMT6WIZfXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			//- <iframe width="850" height="480" src="https://www.youtube.com/embed/ThMT6WIZfXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			video(controls)
+				source(src="video/сomp_2_time.m4v" type="video/mp4")
+				source(src="video.сomp_2_time.webm" type="video/webm")
 		// /video
 		
 	include blocks/footer.jade
