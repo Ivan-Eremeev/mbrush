@@ -1,0 +1,32 @@
+.contacts {
+	margin-bottom: 175px;
+	&_content {
+		font-size: 19px;
+		line-height: 34px;
+	}
+	&_text {
+		margin-bottom: 28px;
+	}
+	&_list {
+		font-weight: 600;
+		span {
+
+		}
+		a {
+			color: #000;
+		}
+	}
+	@media (max-width: $break_sm) {
+		margin-bottom: 20px;
+		&_content {
+			font-size: 16px;
+			line-height: 28px;
+			text-align: center;
+		}
+		&_list {
+			span {
+				display: block;
+			}
+		}
+	}
+}
