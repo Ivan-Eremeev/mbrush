@@ -314,6 +314,9 @@ body {
     .page {
       padding: 30px 0 30px; } }
 
+.img-full img {
+  width: 100%; }
+
 .header {
   width: 100%;
   padding: 45px 0 20px;
@@ -889,5 +892,48 @@ body {
     margin-bottom: 20px; }
   .text strong {
     font-weight: 700; }
+
+.description {
+  max-width: 870px;
+  padding: 20px 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #eeeeee;
+  margin-bottom: 50px; }
+  .description_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 33px 0;
+    position: relative; }
+  .description_col--left {
+    width: 170px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0; }
+  .description_title {
+    font-weight: bold; }
+  .description_list li {
+    line-height: 28.41px; }
+  .description_line {
+    width: 250px;
+    height: 2px;
+    background-color: #000100;
+    position: absolute;
+    left: 65px;
+    bottom: 0; }
+  @media (max-width: 500px) {
+    .description_row {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 15px 0; }
+    .description_col {
+      width: 100%; }
+    .description_line {
+      width: 70%;
+      height: 1px;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0); } }
 
 /*# sourceMappingURL=style.css.map */
