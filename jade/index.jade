@@ -5,9 +5,12 @@ block title
 
 block content
 
-		//- include blocks/header.jade
+	include blocks/header_black.jade
+
+	.page-wrapper
 		
 		.wrapper
+			.title.title--small Страницы
 			ul.pageNav
 				li
 					a(href="home.html") Главная
@@ -22,7 +25,7 @@ block content
 				li
 					a(href="guide.html") Инструкция
 			
-		//- include blocks/footer.jade
+	include blocks/footer.jade
 
 block js
 	script(src="js/jquery.min.js")

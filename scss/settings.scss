@@ -1,4 +1,5 @@
 html {
+	height: 100%;
 	&.lock {
 		overflow: hidden;
 	}
@@ -23,6 +24,9 @@ input {
 	@include wrapper();
 }
 body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
 	background-color: #fff;
 	font-family: Montserrat, sans-serif;
 	font-size: 16px;
@@ -152,4 +156,10 @@ body {
 	img {
 		width: 100%;
 	}
+}
+.page-wrapper {
+	flex-grow: 1;
+}
+.pageNav {
+	margin-bottom: 100px;
 }

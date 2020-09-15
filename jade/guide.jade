@@ -6,67 +6,69 @@ block title
 block content
 
 	include blocks/header_black.jade
+
+	.page-wrapper
 	
-	.wrapper
+		.wrapper
 
-		main.page
+			main.page
+				
+				h1.title.title--small Инструкция
+				.img-full
+					img(src="img/designmbrush001_1512x.jpg")
+				.img-full
+					img(src="img/m10101_590x.jpg")
+				.img-full
+					img(src="img/mbrush-guideline-08-2.jpg")
+				.img-full
+					img(src="img/1.jpg")
+				.img-full
+					img(src="img/2.jpg")
+
+				.description
+
+					.description_row
+						.description_col.description_col--left
+							.description_title Основные
+						.description_col
+							ul.description_list
+								li Тип: Цветной принтер
+								li Цвет: Белый
+						.description_line
+
+					.description_row
+						.description_col.description_col--left
+							.description_title Спецификация
+						.description_col
+							ul.description_list
+								li Подключение: сеть Wi-Fi/USB
+								li Необходимая система: Android/iOS/Windows/Mac OS/Linux
+								li Обнаружение движения: оптический датчик
+								li Время автономной работы: 6 часов
+								li Зарядный порт: USB Type-C
+								li Время ожидания: &gt; 1 год.
+
+					.description_row
+						.description_col.description_col--left
+							.description_title Вес и размер
+						.description_col
+							ul.description_list
+								li Масса продукта: 150 г
+								li Масса упаковки: 300 г
+								li Размер продукта (L x W x H): 72 x 68 x 51 мм
+								li Размер упаковки (L x W x H): 100 x 100 x 70 мм
+
+					.description_row
+						.description_col.description_col--left
+							.description_title Содержание
+						.description_col
+							ul.description_list
+								li 1 цветной принтер Bluetooth Mobile (включая картриджи с чернилами, которые могут печатать приблизительно 3 000 раз)
+								li 1 зарядный кабель
+								li 1 x Руководство пользователя
+
 			
-			h1.title.title--small Инструкция
-			.img-full
-				img(src="img/designmbrush001_1512x.jpg")
-			.img-full
-				img(src="img/m10101_590x.jpg")
-			.img-full
-				img(src="img/mbrush-guideline-08-2.jpg")
-			.img-full
-				img(src="img/1.jpg")
-			.img-full
-				img(src="img/2.jpg")
-
-			.description
-
-				.description_row
-					.description_col.description_col--left
-						.description_title Основные
-					.description_col
-						ul.description_list
-							li Тип: Цветной принтер
-							li Цвет: Белый
-					.description_line
-
-				.description_row
-					.description_col.description_col--left
-						.description_title Спецификация
-					.description_col
-						ul.description_list
-							li Подключение: сеть Wi-Fi/USB
-							li Необходимая система: Android/iOS/Windows/Mac OS/Linux
-							li Обнаружение движения: оптический датчик
-							li Время автономной работы: 6 часов
-							li Зарядный порт: USB Type-C
-							li Время ожидания: &gt; 1 год.
-
-				.description_row
-					.description_col.description_col--left
-						.description_title Вес и размер
-					.description_col
-						ul.description_list
-							li Масса продукта: 150 г
-							li Масса упаковки: 300 г
-							li Размер продукта (L x W x H): 72 x 68 x 51 мм
-							li Размер упаковки (L x W x H): 100 x 100 x 70 мм
-
-				.description_row
-					.description_col.description_col--left
-						.description_title Содержание
-					.description_col
-						ul.description_list
-							li 1 цветной принтер Bluetooth Mobile (включая картриджи с чернилами, которые могут печатать приблизительно 3 000 раз)
-							li 1 зарядный кабель
-							li 1 x Руководство пользователя
-
-		
-	include blocks/footer.jade
+		include blocks/footer.jade
 
 block js
 	script(src="js/jquery.min.js")
