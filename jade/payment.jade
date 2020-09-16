@@ -1,0 +1,75 @@
+extends blocks/base.jade
+
+block title 
+	title Инструкция
+
+block content
+
+	include blocks/header_black.jade
+
+	.page-wrapper
+	
+		.wrapper
+
+			main
+				
+				.payment
+
+					.payment_a
+						.payment_img
+							img(src="img/broduct.jpg")
+
+					.payment_b
+
+						h1.title MBrush
+
+						.payment_subtitle мобильный цветной принтер
+
+						.payment_stars
+							img(src="img/star.svg").payment_star
+							img(src="img/star.svg").payment_star
+							img(src="img/star.svg").payment_star
+							img(src="img/star.svg").payment_star
+							img(src="img/star.svg").payment_star
+
+						.payment_price
+							.payment_price-old 19 990 &#8381;
+							.payment_price-new 14 990 &#8381;
+
+						.payment_content-a
+							.payment_text-a 
+								span Доставка 
+								| рассчитана при оформлении заказа.
+
+							.payment_line
+
+							.payment_text-a Дополнительно
+
+						.payment_name MBRUSH ПРИНТЕР
+						
+						.payment_content-b
+							.payment_text-b TRI - ЦВЕТНОЙ КАТРИДЖ
+							.payment_text-b MBRUSH ПРИНТЕР + TRI - ЦВЕТНОЙ КАТРИДЖ
+
+						.payment_btn.payment_btns
+							.payment_btn.payment_btn--white Добавить в корзину
+							.payment_btn.payment_btn--black Купить сейчас
+
+		include blocks/footer.jade
+
+block js
+	script(src="js/jquery.min.js")
+	//- script(src="js/jquery.fancybox.js")
+	//- script(src="js/slick.min.js")
+	//- script(src="js/jquery.matchHeight-min.js")
+	//- script(src="js/jquery.inputmask.min.js")
+	//- script(src="js/autosize.min.js")
+	//- script(src="js/tooltipster.bundle.min.js")
+	//- script(src="js/jquery.mmenu.min.all.js")
+	//- script(src="js/wow.min.js")
+	//- script(src="js/fullpage.min.js")
+	//- script(src="js/jquery.vide.min.js")
+	//- script(src="js/jquery.scrollbar.min.js")
+	//- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	//- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y"></script>
+	script(src="js/script.js")

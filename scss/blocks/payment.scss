@@ -1,0 +1,111 @@
+.payment {
+	display: flex;
+	padding: 150px 0;
+	&_a {
+		width: 55%;
+		display: flex;
+		align-items: center;
+	}
+	&_b {
+		width: 45%;
+		text-align: center;
+	}
+	&_img {
+
+	}
+	.title {
+		padding-bottom: 0;
+		text-transform: none;
+		margin-bottom: 15px;
+		&:after {
+			display: none;
+		}
+	}
+	&_subtitle {
+		font-family: "Old Standard TT";
+		font-size: 26px;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	&_stars {
+		margin-bottom: 25px;
+	}
+	&_star {
+		width: 22px;
+		height: 22px;
+		margin: 0 2px;
+	}
+	&_price {
+		display: inline-block;
+		position: relative;
+		margin-bottom: 25px;
+	}
+	&_price-old {
+		text-decoration: line-through;
+		font-size: 17px;
+		position: absolute;
+		right: 100%;
+		top: -16px;
+		white-space: nowrap;
+	}
+	&_price-new {
+		color: $orange;
+		font-size: 26px;
+	}
+	&_content-a {
+		margin-bottom: 17px;
+	}
+	&_text-a {
+		font-size: 14px;
+		span {
+			color: $orange;
+		}
+	}
+	&_line {
+		width: 108px;
+    height: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000100;
+	}
+	&_name {
+		display: inline-block;
+		padding: 6px 20px;
+		border: 1px solid #000000;
+		margin-bottom: 22px;
+	}
+	&_text-b {
+		font-weight: 600;
+		text-transform: uppercase;
+		max-width: 230px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	&_content-b {
+		margin-bottom: 35px;
+	}
+	&_btns {
+		max-width: 470px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&_btn {
+		padding: 13px 10px;
+		font-weight: 600;
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-bottom: 14px;
+		&--white {
+			border: 1px solid #000000;
+		}
+		&--black {
+			background-color: #1f2021;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: #fff;
+		}
+	}
+}
