@@ -35,6 +35,9 @@
 		background-color: #000;
 		opacity: 0.4;
 	}
+	.btn-black {
+		display: inline-block;
+	}
 	@media (max-width: $break_sm) {
 		margin-bottom: 50px;
 		&_title {

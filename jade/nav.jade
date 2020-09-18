@@ -1,0 +1,47 @@
+extends blocks/base.jade
+
+block title 
+	title Меню страниц
+
+block content
+
+	include blocks/header_black.jade
+
+	.page-wrapper
+		
+		.wrapper
+			.title.title--small Страницы
+			ul.pageNav
+				li
+					a(href="index.html") Главная
+				li
+					a(href="owr_history.html") Наша история
+				li
+					a(href="contacts.html") Контакты
+				li
+					a(href="delivery.html") Доставка
+				li
+					a(href="faq.html") Ответы на часто задаваемые вопросы
+				li
+					a(href="guide.html") Инструкция
+				li
+					a(href="payment.html") Оплата
+			
+	include blocks/footer.jade
+
+block js
+	script(src="js/jquery.min.js")
+	//- script(src="js/jquery.fancybox.js")
+	//- script(src="js/slick.min.js")
+	//- script(src="js/jquery.matchHeight-min.js")
+	//- script(src="js/jquery.inputmask.min.js")
+	//- script(src="js/autosize.min.js")
+	//- script(src="js/tooltipster.bundle.min.js")
+	//- script(src="js/jquery.mmenu.min.all.js")
+	//- script(src="js/wow.min.js")
+	//- script(src="js/fullpage.min.js")
+	//- script(src="js/jquery.vide.min.js")
+	//- script(src="js/jquery.scrollbar.min.js")
+	//- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	//- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y"></script>
+	script(src="js/script.js")

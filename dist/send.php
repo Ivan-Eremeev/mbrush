@@ -1,5 +1,5 @@
 <?php
-if ((isset($_POST['name']) || $_POST['tel'] || $_POST['email'] != "")) { //Проверка отправилось ли наше поля name и не пустые ли они
+if ((isset($_POST['name']) && $_POST['tel'] || $_POST['email'] != "")) { //Проверка отправилось ли наше поля name и не пустые ли они
   $to = 'ivan.eremeev@yandex.ru'; //Почта получателя, через запятую можно указать сколько угодно адресов
   $subject = ''.$_POST['subject'].'';
   $message = '

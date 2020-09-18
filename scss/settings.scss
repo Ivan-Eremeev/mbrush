@@ -163,3 +163,12 @@ body {
 .pageNav {
 	margin-bottom: 100px;
 }
+.success {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.subtitle {
+		padding: 20px 0;
+	}
+}

@@ -37,6 +37,7 @@ $red: #ff0000;
 
 // Блоки стилей
 @import 'settings';
+@import 'blocks/modal';
 @import 'blocks/header';
 @import 'blocks/menu';
 @import 'blocks/welcome';
@@ -49,5 +50,4 @@ $red: #ff0000;
 @import 'blocks/description';
 @import 'blocks/payment';
 @import 'blocks/form';
-@import 'blocks/modal';
 @import 'blocks/paymentDesc';

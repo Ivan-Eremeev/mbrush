@@ -145,11 +145,11 @@ block content
 				.modal#modal-1
 					.modal_body
 						.modal_content
-							form.form(method="post")
+							form.form(action="send.php" method="post")
 								.form_block
 									p Пожалуйста введите свое имя
 									.form_input
-										input(type="text" name="name" placeholder="Имя")
+										input(type="text" name="name" placeholder="Имя" required)
 								.form_block
 									p Введите номер телефона 
 										span или 

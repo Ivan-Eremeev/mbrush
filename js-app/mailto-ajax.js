@@ -1,4 +1,4 @@
-s// Простая проверка форм на заполненность и отправка аяксом
+// Простая проверка форм на заполненность и отправка аяксом
 // function formSubmit() {
 $("[type=submit]").on('click', function (e){ 
   e.preventDefault();
@@ -9,7 +9,7 @@ $("[type=submit]").on('click', function (e){
   var url = form.attr('action');
   // Собираем все данные с полей формы для отправки
   var form_data = form.serialize();
-  // Выбираем все обязательные поля по атрибуту required
+  // Выбираем все поля
   var field = form.find('[required]');
 
   // Задаем количество пустых полей по умолчанию
@@ -20,7 +20,7 @@ $("[type=submit]").on('click', function (e){
     // Если поля пустые
     if ($(this).val() == "") {
       // Добавляем класс invalid
-      $(this).addClass('invalid');
+      $(this).parent().addClass('invalid');
       // Увеличиваем счеткик пустых полей
       empty++;
     // Если поля не пустые
@@ -56,7 +56,7 @@ $("[type=submit]").on('click', function (e){
         // Открываем окно с сообщением
         // modalShow($('#success'));
         // Открываем какую то страницу. как правило так называемую "страницу спасибо"
-        // document.location.href = "success.html";
+        document.location.href = "success.html";
       },
       // При ошибке отправки
       error: function (response) {
@@ -72,17 +72,17 @@ $("[type=submit]").on('click', function (e){
 // Убираем класс invalid при снятии фокуса если поле не пустое
 $('[required]').on('blur', function() {
   if ($(this).val() != '') {
-    $(this).removeClass('invalid');
+    $(this).parent().removeClass('invalid');
   }
 });
 // Если есть чекбокс с политикой можно отключать кнопку при снятом чекбоксе добавляя к кнопке атрибут disabled 
-$('.form__privacy input').on('change', function(event) {
-  event.preventDefault();
-  var btn = $(this).closest('.form').find('.btn');
-  if ($(this).prop('checked')) {
-    btn.removeAttr('disabled');
-    // console.log('checked');
-  } else {
-    btn.attr('disabled', true);
-  }
-});
+// $('.form__privacy input').on('change', function(event) {
+//   event.preventDefault();
+//   var btn = $(this).closest('.form').find('.btn');
+//   if ($(this).prop('checked')) {
+//     btn.removeAttr('disabled');
+//     // console.log('checked');
+//   } else {
+//     btn.attr('disabled', true);
+//   }
+// });

@@ -20,6 +20,12 @@
 	&_input {
 		border: 1px solid #000000;
 		margin-bottom: 10px;
+		&.invalid {
+			border-color: red;
+		}
+		&.valid {
+			border-color: green;
+		}
 	}
 	input {
 		width: 100%;
@@ -52,6 +58,8 @@
 	border-radius: 5px;
 }
 .modal_close {
+	top: 10px;
+	right: 10px;
 	&:after,&:before {
 		content: '';
 		display: block;
