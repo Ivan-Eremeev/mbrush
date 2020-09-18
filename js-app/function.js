@@ -17,7 +17,7 @@
 // libs-settings/tooltipster-settings.js
 // libs-settings/yandex-map-settings.js
 // libs-settings/google-map-settings.js
-// mailto-ajax.js
+// @prepros-append mailto-ajax.js
 
 // Брэйкпоинты js
 var	breakXl = 1400,
@@ -63,7 +63,7 @@ $(document).ready(function () {
 	// Модальное окно
 	// Задать кнопке, по которой открывается окно класс ".modal-trigger" и атрибут "data-modal", с id окна.
 	// Пример <button>(class="modal-trigger" data-modal="#modal-1")</button>
-	// modal();
+	modal();
 
 	// Открыть модальное окно
 	// modalShow($('#modal-1'));
@@ -292,42 +292,42 @@ function myMenu(menu) {
 // 	});
 // };
 
-// // Модальное окно
-// function modal(modal) {
-// 	$('.modal-trigger').on('click', function() {
-// 		var $this = $(this),
-// 				data = $this.data('modal'),
-// 				thisModal = $(data);
-// 		modalShow(thisModal);
-// 	});
-// };
-// // Открытие модального окна
-// function modalShow(thisModal) {
-// 	var html = $('html'),
-// 			modalClose = thisModal.find($('.modal_close')),
-// 			documentWidth = parseInt(document.documentElement.clientWidth),
-// 			windowsWidth = parseInt(window.innerWidth),
-// 			scrollbarWidth = windowsWidth - documentWidth;
-// 	thisModal.show(0, function() {
-// 		setTimeout(thisModal.addClass('open'),500);
-// 	});
-// 	html.addClass('lock').css('padding-right',scrollbarWidth);
-// 	modalClose.on('click', function() {
-// 		modalHide(thisModal);
-// 	});
-// 	thisModal.on('click', function(e) {
-// 		if (thisModal.has(e.target).length === 0) {
-// 			modalHide(thisModal);
-// 		}
-// 	});
-// };
-// // Закрытие модального окна
-// function modalHide(thisModal) {
-// 	var html = $('html');
-// 	thisModal.removeClass('open');
-// 	thisModal.hide();
-// 	html.removeClass('lock').css('padding-right',0);
-// };
+// Модальное окно
+function modal(modal) {
+	$('.modal-trigger').on('click', function() {
+		var $this = $(this),
+				data = $this.data('modal'),
+				thisModal = $(data);
+		modalShow(thisModal);
+	});
+};
+// Открытие модального окна
+function modalShow(thisModal) {
+	var html = $('html'),
+			modalClose = thisModal.find($('.modal_close')),
+			documentWidth = parseInt(document.documentElement.clientWidth),
+			windowsWidth = parseInt(window.innerWidth),
+			scrollbarWidth = windowsWidth - documentWidth;
+	thisModal.show(0, function() {
+		setTimeout(thisModal.addClass('open'),500);
+	});
+	html.addClass('lock').css('padding-right',scrollbarWidth);
+	modalClose.on('click', function() {
+		modalHide(thisModal);
+	});
+	thisModal.on('click', function(e) {
+		if (thisModal.has(e.target).length === 0) {
+			modalHide(thisModal);
+		}
+	});
+};
+// Закрытие модального окна
+function modalHide(thisModal) {
+	var html = $('html');
+	thisModal.removeClass('open');
+	thisModal.hide();
+	html.removeClass('lock').css('padding-right',0);
+};
 
 // Текст печатная машинка
 // function textPrint(block) {

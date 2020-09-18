@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Инструкция
+	title Оплата
 
 block content
 
@@ -16,14 +16,18 @@ block content
 				.payment
 
 					.payment_a
+						h1.title.mobile-visible MBrush
+
+						.payment_subtitle.mobile-visible мобильный цветной принтер
+
 						.payment_img
 							img(src="img/broduct.jpg")
 
 					.payment_b
 
-						h1.title MBrush
+						.title.mobile-hide MBrush
 
-						.payment_subtitle мобильный цветной принтер
+						.payment_subtitle.mobile-hide мобильный цветной принтер
 
 						.payment_stars
 							img(src="img/star.svg").payment_star
@@ -38,7 +42,7 @@ block content
 
 						.payment_content-a
 							.payment_text-a 
-								span Доставка 
+								a(href="delivery.html") Доставка 
 								| рассчитана при оформлении заказа.
 
 							.payment_line
@@ -51,9 +55,115 @@ block content
 							.payment_text-b TRI - ЦВЕТНОЙ КАТРИДЖ
 							.payment_text-b MBRUSH ПРИНТЕР + TRI - ЦВЕТНОЙ КАТРИДЖ
 
-						.payment_btn.payment_btns
-							.payment_btn.payment_btn--white Добавить в корзину
-							.payment_btn.payment_btn--black Купить сейчас
+						.payment_btns
+							.payment_btn.payment_btn--white.modal-trigger(data-modal="#modal-1") Добавить в корзину
+							.payment_btn.payment_btn--black.modal-trigger(data-modal="#modal-1") Купить сейчас
+
+				.paymentDesc
+					.paymentDesc_a
+						.paymentDesc_img
+							img(src="img/payment1.jpg")
+						.paymentDesc_img
+							img(src="img/mb-01_590x.jpg")
+						.paymentDesc_img
+							img(src="img/m10101_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-011_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-012_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb31001_590x.jpg")
+						.paymentDesc_img
+							img(src="img/m0004_1512x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-03_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-04_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-05_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-06_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-07_590x.jpg")
+						.paymentDesc_img
+							img(src="img/mb-08_590x.jpg")
+								
+					.paymentDesc_b
+						.paymentDesc_content.paymentDesc_content--red
+							p Обратите внимание, что для того, чтобы печатные рисунки или текст не были легко стерты, вы можете приобрести водонепроницаемое покрытие и лак самостоятельно. (Доступно на eBay и целевом сайте...)
+							p Неабсорбирующие материалы требуют покрытия, такого как пластик, металл, керамика, стекло и дерево. Водопоглощающая поверхность может быть напеча-тана непосредственно, например, бумага, картонная коробка, стенка.Покрытие перед печатью, лак напыляется после печати, что может играть водонепроницаемый и противоочистительный эффект
+						.paymentDesc_content
+							h2 САМЫЙ МАЛЕНЬКИЙ И ЛЕГКИЙ ПОРТАТИВНЫЙ ПРИНТЕР ДЛЯ ЛЮБОЙ ПОВЕРХНОСТИ, В ЛЮБОМ МЕСТЕ И В ЛЮБОЕ ВРЕМЯ!
+							p MBrush - лучший портативный принтер. Он сверхлегкий, умещается на ладони и позволяет создавать быструю, яркую, цветную печать в любом месте. Он работает по Wi-Fi с вашим телефоном, чтобы легко загружать любой текст, изображение или дизайн и мгновенно печатать на практически любой объект или поверхность нажатием кнопки. Печать никогда не была более мобильной и удобной.
+							.paymentDesc_img
+								img(src="img/designmbrush001_1512x.jpg")
+
+						.paymentDesc_title спецификация
+
+						.description.description-b
+
+							.description_row
+								.description_col.description_col--left
+									.description_title Основные
+								.description_col
+									ul.description_list
+										li Тип: Цветной принтер
+										li Цвет: Белый
+								.description_line
+
+							.description_row
+								.description_col.description_col--left
+									.description_title Спецификация
+								.description_col
+									ul.description_list
+										li Подключение: сеть Wi-Fi/USB
+										li Необходимая система: Android/iOS/Windows/Mac OS/Linux
+										li Обнаружение движения: оптический датчик
+										li Время автономной работы: 6 часов
+										li Зарядный порт: USB Type-C
+										li Время ожидания: &gt; 1 год.
+
+							.description_row
+								.description_col.description_col--left
+									.description_title Вес и размер
+								.description_col
+									ul.description_list
+										li Масса продукта: 150 г
+										li Масса упаковки: 300 г
+										li Размер продукта (L x W x H): 72 x 68 x 51 мм
+										li Размер упаковки (L x W x H): 100 x 100 x 70 мм
+
+							.description_row
+								.description_col.description_col--left
+									.description_title Содержание
+								.description_col
+									ul.description_list
+										li 1 цветной принтер Bluetooth Mobile (включая картриджи с чернилами, которые могут печатать приблизительно 3 000 раз)
+										li 1 зарядный кабель
+										li 1 x Руководство пользователя
+
+				.modal#modal-1
+					.modal_body
+						.modal_content
+							form.form(method="post")
+								.form_block
+									p Пожалуйста введите свое имя
+									.form_input
+										input(type="text" name="name" placeholder="Имя")
+								.form_block
+									p Введите номер телефона 
+										span или 
+										| email
+									.form_row
+										.form_col
+											.form_input
+												input(type="tel" name="tel" placeholder="Телефон")
+										.form_col
+											.form_input
+												input(type="email" name="email" placeholder="Email")
+								.form_btn
+									button(type="submit").payment_btn.payment_btn--black Отправить
+							.modal_close
 
 		include blocks/footer.jade
 

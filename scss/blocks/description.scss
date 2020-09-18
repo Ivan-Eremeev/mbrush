@@ -32,6 +32,22 @@
 		left: 65px;
 		bottom: 0;
 	}
+	@media (max-width: $break_md) {
+		&-b {
+			.description_row {
+				flex-wrap: wrap;
+				padding: 15px 0;
+			}
+			.description_col {
+				width: 100%;
+			}
+			.description_line {
+				width: 70%;
+				left: 50%;
+				transform: translate(-50%,0);
+			}
+		}
+	}
 	@media (max-width: $break_xs) {
 		&_row {
 			flex-wrap: wrap;

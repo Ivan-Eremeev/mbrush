@@ -1,10 +1,9 @@
 .payment {
 	display: flex;
-	padding: 150px 0;
+	padding: 150px 0 90px;
 	&_a {
 		width: 55%;
-		display: flex;
-		align-items: center;
+		text-align: center;
 	}
 	&_b {
 		width: 45%;
@@ -57,7 +56,7 @@
 	}
 	&_text-a {
 		font-size: 14px;
-		span {
+		a {
 			color: $orange;
 		}
 	}
@@ -106,6 +105,22 @@
 			font-weight: 600;
 			text-transform: uppercase;
 			color: #fff;
+		}
+	}
+	@media (max-width: $break_sm) {
+		flex-wrap: wrap;
+		padding: 50px 0 30px;
+		&_a {
+			width: 100%;
+		}
+		&_b {
+			width: 100%;
+		}
+		&_img {
+			max-width: 500px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
 		}
 	}
 }
