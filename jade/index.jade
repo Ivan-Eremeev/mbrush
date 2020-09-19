@@ -1,7 +1,7 @@
 extends blocks/base.jade
 
 block title 
-	title Главная
+	title MBrush - Главная
 
 block content
 
@@ -67,8 +67,10 @@ block content
 				.video
 					//- <iframe width="850" height="480" src="https://www.youtube.com/embed/ThMT6WIZfXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					video(controls)
-						source(src="video/сomp_2_time.m4v" type="video/mp4")
-						source(src="video.сomp_2_time.webm" type="video/webm")
+						//- source(src="video/сomp_2_time.m4v" type="video/mp4")
+						//- source(src="video.сomp_2_time.webm" type="video/webm")
+						source(src="video/comp_2_time.m4v" type="video/mp4")
+						source(src="video/comp_2_time.webm" type="video/webm")
 				// /video
 		
 	include blocks/footer.jade
@@ -88,4 +90,4 @@ block js
 	//- script(src="js/jquery.scrollbar.min.js")
 	//- <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	//- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y"></script>
-	script(src="js/script.js")
+	script(src="js/script.min.js")
